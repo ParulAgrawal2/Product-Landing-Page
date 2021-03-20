@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/css?family=Chewy);
+
+
+#header{
+  color: darkblue;
+  font-family: "chewy";
+  padding: 30px;
+  text-align: center;
+
+  
+}
+
+#head{
+  
+  text-align: center;
+}
+
+#headimg{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-areas: 
+    "header-img head";
+    grid-gap: 500px;
+}
+
+#nav-bar{
+ 
+  position: fixed;
+  width:100%;
+  top: 0;
+  color: darkblue;
+  text-align: center;
+  
+  z-index: 9999;
+  
+}
+
+.video{
+  
+  width: 50%;
+  margin: auto;
+}
+
+
+
+.nav-link{
+  
+  padding: 15px;
+  font-size: 20px;
+}
+
+#form{
+  font-family: "chewy";
+  background-color: lightpink;
+  text-align: center;
+  position: relative;
+  font-size: 25px;
+  height: 100%;
+  color: darkblue;
+ 
+  
+}
+
+
+
+
+
+#aboutus{
+  
+  font-family: "chewy";
+  text-align: center;
+  position:relative;
+  color: darkblue;
+  background: lightblue;
+  
+  
+}
+
+#video{
+   
+  padding: 50px;
+}
+
+
+
+#box-container{
+  display: grid;
+  grid-template-columns: 500px 500px;
+  justify-content: center;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "box1 box2";
+  font-family: "chewy";
+  height: 300px;
+  position: relative;
+  
+  
+}
+
+.box1{
+  
+  background-color: white;
+  padding: 20px;
+  border: 10px solid pink;
+  position: relative;
+}
+
+.box2{
+  
+  background-color: lightblue;
+  padding: 20px;
+  border: 10px solid white;
+  position: relative;
+}
+
+
+
+#footer{
+  
+  font-family: "chewy";
+  background-color: lightblue;
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+.containergrid{
+  
+  display: grid;
+  grid-template-columns: 500px 500px;
+  justify-content: center;
+  grid-gap: 10px;
+  grid-template-areas: 
+    "form aboutus"
+}
+
+.lf{
+  
+  display: block;
+  padding: 10px;
+}
+
+@media (max-width: 700px){
+  .containergrid{
+    
+  grid-template-columns: auto;
+  
+  grid-gap: 10px;
+  grid-template-areas: 
+    "form"
+    "aboutus"
+    
+  }
+
+  #box-container{
+      
+    grid-template-columns: auto;
+    
+    grid-gap: 10px;
+    grid-template-areas: 
+      "box1"
+      "box2"
+      
+    }
+
+    #headimg{
+
+    grid-template-columns: 180px 800px;
+    grid-template-areas: 
+    "header-img head";
+    grid-gap: 100px;
+}
+
+    .video{
+        width: auto;
+        margin-left: 0%;
+    }
+  
+}
+
+
+
